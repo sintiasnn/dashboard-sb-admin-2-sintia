@@ -1,7 +1,7 @@
 <?php
 
 use Illuminate\Support\Facades\Route;
-use App\Http\Controllers\ChartJSControllers;
+use App\Http\Controllers\ChartJSController;
 use App\Http\Controllers\HomeController;
 
 /*
@@ -32,4 +32,4 @@ Route::get('/about', function () {
 
 //Route::get('chart', [ChartJSController::class, 'indeks_a'])->name('chart');
 
-Route::get('chart', 'ChartJSController@indeks_a')->name('chart');
+Route::get('/chart', 'ChartJSController@indeks_a')->name('chart');
