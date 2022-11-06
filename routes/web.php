@@ -1,6 +1,8 @@
 <?php
 
 use Illuminate\Support\Facades\Route;
+use App\Http\Controllers\ChartJSControllers;
+use App\Http\Controllers\HomeController;
 
 /*
 |--------------------------------------------------------------------------
@@ -27,3 +29,5 @@ Route::put('/profile', 'ProfileController@update')->name('profile.update');
 Route::get('/about', function () {
     return view('about');
 })->name('about');
+
+Route::get('chart', [ChartJSController::class, 'indeks_a']);
