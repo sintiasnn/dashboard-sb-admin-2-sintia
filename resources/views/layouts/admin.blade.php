@@ -47,6 +47,13 @@
                 <span>{{ __('Dashboard') }}</span></a>
         </li>
 
+        <!-- Nav Item - Grafik -->
+        <li class="nav-item {{ Nav::isRoute('chart') }}">
+            <a class="nav-link" href="{{ route('chart') }}">
+                <i class="fas fa-fw fa-tachometer-alt"></i>
+                <span>{{ __('Grafik') }}</span></a>
+        </li>
+
         <!-- Divider -->
         <hr class="sidebar-divider">
 
