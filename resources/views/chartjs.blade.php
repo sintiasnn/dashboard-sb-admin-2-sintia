@@ -1,4 +1,5 @@
 @extends('layouts.admin')
+@stack('footer_scripts')
 
 @section('main-content')
   <h1 class="h3 mb-4 text-gray-800">{{ __('Grafik') }}</h1>
@@ -8,17 +9,13 @@
       <h6 class="m-0 font-weight-bold text-primary">Indeks A </h6>
     </div>
     <div class="card-body">
-      <div class="text-center">
-        <canvas id="myChart" height="100px"></canvas>
-      </div>
+      <canvas id="myChart" height="100px"></canvas>
     </div>
   </div>
 
 @endsection
 
-@yield('footer_scripts')
-
-@section('footer_scripts')
+@push('footer_scripts')
 <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js" ></script>
 <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
   
@@ -65,4 +62,4 @@
         config
       );
 </script>
-@stop
+@endpush
