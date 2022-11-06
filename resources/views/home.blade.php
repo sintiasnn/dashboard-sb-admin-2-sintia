@@ -218,9 +218,3 @@
         </div>
     </div>
 @endsection
-
-@section('extra-script')
-
-{{Html::script('js/components/pizza.js')}}
-
-@endsection

@@ -1,5 +1,5 @@
 @extends('layouts.admin')
-@stack('footer_scripts')
+@yield('footer_scripts')
 
 @section('main-content')
   <h1 class="h3 mb-4 text-gray-800">{{ __('Grafik') }}</h1>
@@ -15,7 +15,7 @@
 
 @endsection
 
-@push('footer_scripts')
+@section('footer_scripts')
 <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js" ></script>
 <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
   
@@ -62,4 +62,4 @@
         config
       );
 </script>
-@endpush
+@stop
