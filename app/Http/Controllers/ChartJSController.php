@@ -28,6 +28,12 @@ class ChartJSController extends Controller
                 ->get()->toArray();
         $values_a2 = array_column($a2, 'jumlah');
 
+        $a3 = DB::table('tabel_a')
+                ->selectRaw('count(ikp_a3) as jumlah')
+                ->groupBy('ikp_a3')
+                ->get()->toArray();
+        $values_a3 = array_column($a3, 'jumlah');
+
         $a4 = DB::table('tabel_a')
                 ->selectRaw('count(ikp_a4) as jumlah')
                 ->groupBy('ikp_a4')
