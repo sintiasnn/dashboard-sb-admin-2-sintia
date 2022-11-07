@@ -1,5 +1,5 @@
 <!-- Script for display chart indeks a -->
-@yield('footer_scripts')
+@push('footer_scripts')
 <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js" ></script>
 <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
 
@@ -9,8 +9,11 @@
     const a2 =  {!! json_encode($values_a2) !!};
     const a3 =  {!! json_encode($values_a3) !!};
     const a4 =  {!! json_encode($values_a4) !!};
+    const b1 =  {!! json_encode($values_b1) !!};
+    const b2 =  {!! json_encode($values_b2) !!};
+    const b3 =  {!! json_encode($values_b3) !!};
 
-    const barData = {
+    const barData1 = {
         labels: labels,
         datasets: [{
           label: 'A1',
@@ -38,9 +41,9 @@
         }]
     };
   
-    const barChart = {
+    const barChart1 = {
         type: 'bar',
-        data: barData,
+        data: barData1,
         options: {
             y: {
                 beginAtZero: true
@@ -48,9 +51,47 @@
         }
     };
   
-    const chart = new Chart(
-        document.getElementById('barChart'),
-        barChart
+    const chart1 = new Chart(
+        document.getElementById('barChart1'),
+        barChart1
+    );
+
+
+    const barData2 = {
+        labels: labels,
+        datasets: [{
+          label: 'B1',
+          backgroundColor: 'rgb(255, 99, 132)',
+          borderColor: 'rgb(255, 99, 132)',
+          data: b1,
+        },
+        {
+          label: 'B2',
+          backgroundColor: 'rgb(255, 99, 132)',
+          borderColor: 'rgb(255, 99, 132)',
+          data: b2,
+        },
+        {
+          label: 'B3',
+          backgroundColor: 'rgb(255, 99, 132)',
+          borderColor: 'rgb(255, 99, 132)',
+          data: b3,
+        }]
+    };
+  
+    const barChart2 = {
+        type: 'bar',
+        data: barData2,
+        options: {
+            y: {
+                beginAtZero: true
+            }
+        }
+    };
+  
+    const chart2 = new Chart(
+        document.getElementById('barChart2'),
+        barChart2
     );
 
 
