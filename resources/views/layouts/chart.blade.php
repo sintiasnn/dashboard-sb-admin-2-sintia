@@ -2,14 +2,14 @@
 @yield('footer_scripts')
 <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js" ></script>
 <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
-  
+
 <script type="text/javascript">
     const labels = ['Puas','Sangat Puas','Kurang Puas'];
     const a1 =  {!! json_encode($values_a1) !!};
     const a2 =  {!! json_encode($values_a2) !!};
     const a3 =  {!! json_encode($values_a3) !!};
     const a4 =  {!! json_encode($values_a4) !!};
-  
+
     const barData = {
         labels: labels,
         datasets: [{
