@@ -1,5 +1,5 @@
+@extends('layouts.chart')
 @extends('layouts.admin')
-@push('footer_scripts')
 
 @section('main-content')
   <h1 class="h3 mb-4 text-gray-800">{{ __('Grafik') }}</h1>
@@ -12,5 +12,5 @@
       <canvas id="myChart" height="100px"></canvas>
     </div>
   </div>
-
+  
 @endsection
