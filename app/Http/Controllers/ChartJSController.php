@@ -40,7 +40,12 @@ class ChartJSController extends Controller
                 ->get()->toArray();
         $values_a4 = array_column($a4, 'jumlah');
   
-        return view('chartjs', compact('values_a1','values_a2','values_a4'));
+        return view('chartjs', compact('values_a1','values_a2','values_a3','values_a4'));
     }
-    
+
+    public function indeks_b()
+    {
+
+    }
+
 }

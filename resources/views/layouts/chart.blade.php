@@ -7,9 +7,10 @@
     const labels = ['Puas','Sangat Puas','Kurang Puas'];
     const a1 =  {!! json_encode($values_a1) !!};
     const a2 =  {!! json_encode($values_a2) !!};
+    const a3 =  {!! json_encode($values_a3) !!};
     const a4 =  {!! json_encode($values_a4) !!};
   
-    const data = {
+    const barData = {
         labels: labels,
         datasets: [{
           label: 'A1',
@@ -24,6 +25,12 @@
           data: a2,
         },
         {
+          label: 'A3',
+          backgroundColor: 'rgb(255, 99, 132)',
+          borderColor: 'rgb(255, 99, 132)',
+          data: a3,
+        },
+        {
           label: 'A4',
           backgroundColor: 'rgb(255, 99, 132)',
           borderColor: 'rgb(255, 99, 132)',
@@ -31,9 +38,9 @@
         }]
     };
   
-    const config = {
+    const barChart = {
         type: 'bar',
-        data: data,
+        data: barData,
         options: {
             y: {
                 beginAtZero: true
@@ -41,8 +48,33 @@
         }
     };
   
-    const myChart = new Chart(
-        document.getElementById('myChart'),
+    const chart = new Chart(
+        document.getElementById('barChart'),
+        barChart
+    );
+
+
+    const pieData = {
+        labels: labels,
+        datasets: [{
+            label: 'My First Dataset',
+            data: a1,
+            backgroundColor: [
+                'rgb(255, 99, 132)',
+                'rgb(54, 162, 235)',
+                'rgb(255, 205, 86)'
+            ],
+            hoverOffset: 4
+        }]
+    };
+
+    const config = {
+        type: 'doughnut',
+        data: pieData,
+    };
+
+    const pieChart = new Chart(
+        document.getElementById('pieChart'),
         config
     );
 </script>
