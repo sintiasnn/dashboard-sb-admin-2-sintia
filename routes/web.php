@@ -33,4 +33,3 @@ Route::get('/about', function () {
 //Route::get('chart', [ChartJSController::class, 'indeks_a'])->name('chart');
 
 Route::get('/chart', 'ChartJSController@indeks_a')->name('chart');
-Route::get('/chart', 'ChartJSController@indeks_b')->name('chart');
