@@ -77,4 +77,29 @@
         document.getElementById('pieChart'),
         config
     );
+
+    const pieData2 = {
+        labels: labels,
+        datasets: [{
+            label: 'My First Dataset',
+            data: a2,
+            backgroundColor: [
+                'rgb(255, 99, 132)',
+                'rgb(54, 162, 235)',
+                'rgb(255, 205, 86)'
+            ],
+            hoverOffset: 4
+        }]
+    };
+
+    const config2 = {
+        type: 'doughnut',
+        data: pieData2,
+    };
+
+    const pieChart2 = new Chart(
+        document.getElementById('pieChart2'),
+        config2
+    );
+
 </script>

@@ -4,6 +4,7 @@ namespace App\Http\Controllers;
 
 use App\Models\User;
 use Illuminate\Http\Request;
+use DB;
 
 class HomeController extends Controller
 {
@@ -31,6 +32,15 @@ class HomeController extends Controller
             //...
         ];
 
-        return view('home', compact('widget'));
+        //SELECT COUNT(tabel_a.ikp_a1) as jumlah FROM tabel_a;
+        $jumlah = DB::table('tabel_a')
+            ->selectRaw('count(ikp_a1) as jumlah')
+            ->value('jumlah');
+        
+        $jumlah2 = DB::table('tabel_c')
+            ->selectRaw('count(nama_instansi) as jumlah')
+            ->value('jumlah');
+        
+        return view('home', compact('widget','jumlah','jumlah2'));
     }
 }
