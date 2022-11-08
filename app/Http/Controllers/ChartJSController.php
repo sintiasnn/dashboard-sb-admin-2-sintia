@@ -13,7 +13,7 @@ class ChartJSController extends Controller
      *
      * @return response()
      */
-    public function indeks_a()
+    public function indeks()
     {
         //SELECT tabel_a.ikp_a1, COUNT(tabel_a.ikp_a1) as jumlah FROM tabel_a GROUP BY tabel_a.ikp_a1;
         $a1 = DB::table('tabel_a')
