@@ -13,6 +13,15 @@
     </div>
   </div>
 
+  <div class="card shadow mb-4">
+    <div class="card-header py-3">
+      <h6 class="m-0 font-weight-bold text-primary">Indeks B </h6>
+    </div>
+    <div class="card-body">
+      <canvas id="barChart2" height="100px"></canvas>
+    </div>
+  </div>
+
   <div class="col-xl-8 col-lg-7">
     <div class="card shadow mb-4" style=" height:30%; width:30%">
       <div class="card-header py-3">

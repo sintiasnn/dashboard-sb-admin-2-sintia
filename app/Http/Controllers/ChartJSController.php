@@ -39,13 +39,26 @@ class ChartJSController extends Controller
                 ->groupBy('ikp_a4')
                 ->get()->toArray();
         $values_a4 = array_column($a4, 'jumlah');
+
+        $b1 = DB::table('tabel_b')
+                ->selectRaw('count(ikp_b1) as jumlah')
+                ->groupBy('ikp_b1')
+                ->get()->toArray();
+        $values_b1 = array_column($b1, 'jumlah');
+
+        $b2 = DB::table('tabel_b')
+                ->selectRaw('count(ikp_b2) as jumlah')
+                ->groupBy('ikp_b2')
+                ->get()->toArray();
+        $values_b2 = array_column($b2, 'jumlah');
+
+        $b3 = DB::table('tabel_b')
+                ->selectRaw('count(ikp_b3) as jumlah')
+                ->groupBy('ikp_b3')
+                ->get()->toArray();
+        $values_b3 = array_column($b3, 'jumlah');
   
-        return view('chartjs', compact('values_a1','values_a2','values_a3','values_a4'));
-    }
-
-    public function indeks_b()
-    {
-
+        return view('chartjs', compact('values_a1','values_a2','values_a3','values_a4','values_b1','values_b2','values_b3'));
     }
 
 }
