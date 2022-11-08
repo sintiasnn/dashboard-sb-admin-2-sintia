@@ -50,9 +50,6 @@
 
                                     <hr>
 
-
-                                <hr>
-
                                 @if (Route::has('password.request'))
                                     <div class="text-center">
                                         <a class="small" href="{{ route('password.request') }}">
