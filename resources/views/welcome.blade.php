@@ -13,9 +13,11 @@
         <style>
             html, body {
                 background-color: #fff;
-                color: #636b6f;
+                /* background-image: url('{{ asset('img/bg_tanahlot.jpg') }}'); */
+                font-color: #262626;
+                /* opacity: 0; */
                 font-family: 'Nunito', sans-serif;
-                font-weight: 200;
+                font-weight: 400;
                 height: 100vh;
                 margin: 0;
             }
@@ -62,6 +64,8 @@
                 margin-bottom: 30px;
             }
         </style>
+        <!-- Favicon -->
+        <link href="{{ asset('img/Kabupaten Tabanan.png') }}" rel="icon" type="image/png">
     </head>
     <body>
         <div class="flex-center position-ref full-height">

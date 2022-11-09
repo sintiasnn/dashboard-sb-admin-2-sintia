@@ -22,7 +22,7 @@
 
     <div class="row">
 
-        <!-- Earnings (Monthly) Card Example -->
+        <!-- total responden -->
         <div class="col-xl-3 col-md-6 mb-4">
             <div class="card border-left-primary shadow h-100 py-2">
                 <div class="card-body">
@@ -41,7 +41,7 @@
             </div>
         </div>
 
-        <!-- Earnings (Monthly) Card Example -->
+        <!-- total instansi -->
         <div class="col-xl-3 col-md-6 mb-4">
             <div class="card border-left-success shadow h-100 py-2">
                 <div class="card-body">
@@ -69,7 +69,7 @@
             <!-- Project Card Example -->
             <div class="card shadow mb-4">
                 <div class="card-header py-3">
-                    <h6 class="m-0 font-weight-bold text-primary">Projects</h6>
+                    <h6 class="m-0 font-weight-bold text-primary">Tabel responden </h6>
                 </div>
                 <div class="card-body">
                     <h4 class="small font-weight-bold">Server Migration <span class="float-right">20%</span></h4>
@@ -154,7 +154,7 @@
             <!-- Illustrations -->
             <div class="card shadow mb-4">
                 <div class="card-header py-3">
-                    <h6 class="m-0 font-weight-bold text-primary">Illustrations</h6>
+                    <h6 class="m-0 font-weight-bold text-primary">Informasi</h6>
                 </div>
                 <div class="card-body">
                     <div class="text-center">
