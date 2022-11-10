@@ -106,6 +106,30 @@
         config2
     );
 
+        const pieData3 = {
+        labels: labels,
+        datasets: [{
+            label: 'My First Dataset',
+            data: a3,
+            backgroundColor: [
+                'rgb(255, 99, 132)',
+                'rgb(54, 162, 235)',
+                'rgb(255, 205, 86)'
+            ],
+            hoverOffset: 4
+        }]
+    };
+
+    const config3 = {
+        type: 'doughnut',
+        data: pieData3,
+    };
+
+    const pieChart3 = new Chart(
+        document.getElementById('pieChart3'),
+        config3
+    );
+
     const barData2 = {
         labels: labels,
         datasets: [{
@@ -115,13 +139,13 @@
           data: b1,
         },
         {
-          label: 'b2',
+          label: 'B2',
           backgroundColor: 'rgb(255, 99, 132)',
           borderColor: 'rgb(255, 99, 132)',
           data: b2,
         },
         {
-          label: 'b3',
+          label: 'B3',
           backgroundColor: 'rgb(255, 99, 132)',
           borderColor: 'rgb(255, 99, 132)',
           data: b3,
@@ -142,6 +166,8 @@
         document.getElementById('barChart2'),
         barChart2
     );
+
+    
 
 
 </script>
