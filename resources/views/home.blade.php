@@ -128,28 +128,39 @@
         </div>
 
         <div class="col-lg-6 mb-4">
-            <!-- Illustrations -->
+            <!-- Informasi -->
             <div class="card shadow mb-4">
                 <div class="card-header py-3">
                     <h6 class="m-0 font-weight-bold text-primary">Informasi</h6>
                 </div>
                 <div class="card-body">
                     <div class="text-center">
-                        <img class="img-fluid px-3 px-sm-4 mt-3 mb-4" style="width: 25rem;" src="{{ asset('img/svg/undraw_editable_dywm.svg') }}" alt="">
+                        <!-- <img class="img-fluid px-3 px-sm-4 mt-3 mb-4" style="width: 25rem;" src="{{ asset('img/svg/undraw_editable_dywm.svg') }}" alt=""> -->
                     </div>
-                    <p>Add some quality, svg illustrations to your project courtesy of <a target="_blank" rel="nofollow" href="https://undraw.co/">unDraw</a>, a constantly updated collection of beautiful svg images that you can use completely free and without attribution!</p>
-                    <a target="_blank" rel="nofollow" href="https://undraw.co/">Browse Illustrations on unDraw →</a>
+                    <p> Tujuan dari survey Kepuasan Penyelenggaraan Sistem Komunikasi Intra Pemerintah Daerah Kabupaten Tabanan adalah Mengetahui tingkat kepuasan OPD terhadap Internet terpasang, Mengetahui tingkat kepuasan OPD terhadap pelayanan kominfo dalam penanganan permasalaah internet di Pemkab Tabanan, Mengetahui besarnya Bandwith yang dibutuhkan di masing-masing OPD untuk menjalankan tugas -tugas Pemerintahan sesuai tupoksinya secara optimal 
+</p>
+                    <!-- <a target="_blank" rel="nofollow" href="https://undraw.co/">Browse Illustrations on unDraw →</a> -->
                 </div>
             </div>
 
-            <!-- keterangan -->
+            <!-- indikator -->
             <div class="card shadow mb-4">
                 <div class="card-header py-3">
-                    <h6 class="m-0 font-weight-bold text-primary">Keterangan</h6>
+                    <h6 class="m-0 font-weight-bold text-primary">Indikator</h6>
                 </div>
                 <div class="card-body">
-                    <p>SB Admin 2 makes extensive use of Bootstrap 4 utility classes in order to reduce CSS bloat and poor page performance. Custom CSS classes are used to create custom components and custom utility classes.</p>
-                    <p class="mb-0">Before working with this theme, you should become familiar with the Bootstrap framework, especially the utility classes.</p>
+                    <p>A. Presentase OPD yang puas terhadap kecepatan akses internet di Pemkab tabanan</p> <tr>
+                    <p class="mb-0">A1. Koneksi Internet yang tersedia sudah cukup dan sesuai kebutuhan</p> <tr>
+                    <p class="mb-0">A2. Kecepatan Internet yang Stabil</p> <tr>
+                    <p class="mb-0">A3. Koneksi Internet yang tidak terputus</p> <tr>
+                    <p class="mb-0">A4. Kemudahan dalam masuk ke jaringan</p> <tr>
+                    <tr>
+                    <p class="mb-0"></p>
+                    <tr>
+                    <p>B. Presentase OPD yang puas terhadap pelayanan diskominfo dalam penanganan masalah internet</p> <tr>
+                    <p class="mb-0">B1. Kemudahan dalam melakukan komplain ketika terjadi masalah akses internet</p> <tr>
+                    <p class="mb-0">B2. Kecepatan diskominfo dalam merespon komplain</p> <tr>
+                    <p class="mb-0">B3. Kecepatan diskominfo dalam penanganan dan penyelesaian komplain</p> <tr>
                 </div>
             </div>
 
