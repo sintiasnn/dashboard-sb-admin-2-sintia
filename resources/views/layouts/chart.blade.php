@@ -72,8 +72,8 @@
         configB
     );
 
-
-        const pieData = {
+    //doughnut a1
+    const donutDataA1 = {
         labels: labels,
         datasets: [{
             label: 'My First Dataset',
@@ -87,17 +87,18 @@
         }]
     };
 
-    const config = {
+    const configA1 = {
         type: 'doughnut',
-        data: pieData,
+        data: donutDataA1,
     };
 
-    const pieChart = new Chart(
-        document.getElementById('pieChart'),
-        config
+    const donutChartA1 = new Chart(
+        document.getElementById('donutChartA1'),
+        configA1
     );
 
-    const pieData2 = {
+    //donutData a2
+    const donutDataA2 = {
         labels: labels,
         datasets: [{
             label: 'My First Dataset',
@@ -111,17 +112,18 @@
         }]
     };
 
-    const config2 = {
+    const configA2 = {
         type: 'doughnut',
-        data: pieData2,
+        data: donutDataA2,
     };
 
-    const pieChart2 = new Chart(
-        document.getElementById('pieChart2'),
-        config2
+    const donutChartA2 = new Chart(
+        document.getElementById('donutChartA2'),
+        configA2
     );
 
-        const pieData3 = {
+        //donutData a3
+        const donutDataA3 = {
         labels: labels,
         datasets: [{
             label: 'My First Dataset',
@@ -135,17 +137,18 @@
         }]
     };
 
-    const config3 = {
+    const configA3 = {
         type: 'doughnut',
-        data: pieData3,
+        data: donutDataA3,
     };
 
-    const pieChart3 = new Chart(
-        document.getElementById('pieChart3'),
-        config3
+    const donutChartA3 = new Chart(
+        document.getElementById('donutChartA3'),
+        configA3
     );
 
-        const pieData4 = {
+    //donutData a4
+    const donutDataA4 = {
         labels: labels,
         datasets: [{
             label: 'My First Dataset',
@@ -159,13 +162,88 @@
         }]
     };
 
-    const config4 = {
+    const configA4 = {
         type: 'doughnut',
-        data: pieData4,
+        data: donutDataA4,
     };
 
-    const pieChart4 = new Chart(
-        document.getElementById('pieChart4'),
-        config4
+    const donutChartA4 = new Chart(
+        document.getElementById('donutChartA4'),
+        configA4
+    );
+
+        //doughnut B1
+    const donutDataB1 = {
+        labels: labels,
+        datasets: [{
+            label: 'My First Dataset',
+            data: b1,
+            backgroundColor: [
+                'rgb(255, 99, 132)',
+                'rgb(54, 162, 235)',
+                'rgb(255, 205, 86)'
+            ],
+            hoverOffset: 4
+        }]
+    };
+
+    const configB1 = {
+        type: 'doughnut',
+        data: donutDataB1,
+    };
+
+    const donutChartB1 = new Chart(
+        document.getElementById('donutChartB1'),
+        configB1
+    );
+
+    //donutData B2
+    const donutDataB2 = {
+        labels: labels,
+        datasets: [{
+            label: 'My First Dataset',
+            data: b2,
+            backgroundColor: [
+                'rgb(255, 99, 132)',
+                'rgb(54, 162, 235)',
+                'rgb(255, 205, 86)'
+            ],
+            hoverOffset: 4
+        }]
+    };
+
+    const configB2 = {
+        type: 'doughnut',
+        data: donutDataB2,
+    };
+
+    const donutChartB2 = new Chart(
+        document.getElementById('donutChartB2'),
+        configB2
+    );
+
+        //donutData b3
+        const donutDataB3 = {
+        labels: labels,
+        datasets: [{
+            label: 'My First Dataset',
+            data: b3,
+            backgroundColor: [
+                'rgb(255, 99, 132)',
+                'rgb(54, 162, 235)',
+                'rgb(255, 205, 86)'
+            ],
+            hoverOffset: 4
+        }]
+    };
+
+    const configB3 = {
+        type: 'doughnut',
+        data: donutDataB3,
+    };
+
+    const donutChartB3 = new Chart(
+        document.getElementById('donutChartB3'),
+        configB3
     );
 </script>
