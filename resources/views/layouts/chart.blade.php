@@ -13,87 +13,63 @@
     const b1 =  {!! json_encode($values_b1) !!};
     const b2 =  {!! json_encode($values_b2) !!};
     const b3 =  {!! json_encode($values_b3) !!};
-  
-    // bar chart indeks a
-    const barData = {
+    
+    A_puas = a1[0]+a2[0]+a3[0]+a4[0];
+    A_sangat_puas = a1[1]+a2[1]+a3[1]+a4[1];
+    A_tidak_puas = a1[2]+a2[2]+a3[2]+a4[2];
+
+    B_puas = b1[0]+b2[0]+b3[0];
+    B_sangat_puas = b1[1]+b2[1]+b3[1];
+    B_tidak_puas = b1[2]+b2[2]+b3[2];
+
+    //pie chart a
+        const pieDataA = {
         labels: labels,
         datasets: [{
-          label: 'A1',
-          backgroundColor: 'rgb(255, 99, 132)',
-          borderColor: 'rgb(255, 99, 132)',
-          data: a1,
-        },
-        {
-          label: 'A2',
-          backgroundColor: 'rgb(255, 99, 132)',
-          borderColor: 'rgb(255, 99, 132)',
-          data: a2,
-        },
-        {
-          label: 'A3',
-          backgroundColor: 'rgb(255, 99, 132)',
-          borderColor: 'rgb(255, 99, 132)',
-          data: a3,
-        },
-        {
-          label: 'A4',
-          backgroundColor: 'rgb(255, 99, 132)',
-          borderColor: 'rgb(255, 99, 132)',
-          data: a4,
+            label: 'My First Dataset',
+            data: [A_puas,A_sangat_puas,A_tidak_puas],
+            backgroundColor: [
+                'rgb(255, 99, 132)',
+                'rgb(54, 162, 235)',
+                'rgb(255, 205, 86)'
+            ],
+            hoverOffset: 4
         }]
     };
-    
-    const barChart = {
-        type: 'bar',
-        data: barData,
-        options: {
-            y: {
-                beginAtZero: true
-            }
-        }
+
+    const configA = {
+        type: 'pie',
+        data: pieDataA,
     };
-  
-    const chart = new Chart(
-        document.getElementById('barChart'),
-        barChart
+
+    const pieChartA = new Chart(
+        document.getElementById('pieChartA'),
+        configA
     );
 
-    // indeks b
-    const barData2 = {
+    //pie chart b
+    const pieDataB = {
         labels: labels,
         datasets: [{
-          label: 'B1',
-          backgroundColor: 'rgb(255, 99, 132)',
-          borderColor: 'rgb(255, 99, 132)',
-          data: b1,
-        },
-        {
-          label: 'B2',
-          backgroundColor: 'rgb(255, 99, 132)',
-          borderColor: 'rgb(255, 99, 132)',
-          data: b2,
-        },
-        {
-          label: 'B3',
-          backgroundColor: 'rgb(255, 99, 132)',
-          borderColor: 'rgb(255, 99, 132)',
-          data: b3,
+            label: 'My First Dataset',
+            data: [B_puas,B_sangat_puas,B_tidak_puas],
+            backgroundColor: [
+                'rgb(255, 99, 132)',
+                'rgb(54, 162, 235)',
+                'rgb(255, 205, 86)'
+            ],
+            hoverOffset: 4
         }]
     };
-  
-    const barChart2 = {
-        type: 'bar',
-        data: barData2,
-        options: {
-            y: {
-                beginAtZero: true
-            }
-        }
+
+    const configB = {
+        type: 'pie',
+        data: pieDataB,
     };
-  
-    const chart2 = new Chart(
-        document.getElementById('barChart2'),
-        barChart2
+
+    const pieChartB = new Chart(
+        document.getElementById('pieChartB'),
+        configB
     );
 
 
