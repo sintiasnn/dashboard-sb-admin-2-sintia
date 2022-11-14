@@ -33,11 +33,11 @@ class HomeController extends Controller
         ];
 
         //SELECT COUNT(tabel_a.ikp_a1) as jumlah FROM tabel_a;
-        $jumlah = DB::table('tabel_a')
+        $jumlah = DB::table('tabel_indeks')
             ->selectRaw('count(ikp_a1) as jumlah')
             ->value('jumlah');
         
-        $jumlah2 = DB::table('tabel_c')
+        $jumlah2 = DB::table('instansi')
             ->selectRaw('count(nama_instansi) as jumlah')
             ->value('jumlah');
         
