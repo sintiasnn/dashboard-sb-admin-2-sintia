@@ -40,7 +40,8 @@ class HomeController extends Controller
         $jumlah2 = DB::table('instansi')
             ->selectRaw('count(nama_instansi) as jumlah')
             ->value('jumlah');
+
         
-        return view('home', compact('widget','jumlah','jumlah2'));
+        return view('home', compact('widget','jumlah','jumlah2',));
     }
 }
