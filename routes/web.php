@@ -3,6 +3,7 @@
 use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\ChartJSController;
 use App\Http\Controllers\HomeController;
+use App\Http\Controllers\ImportController;
 
 /*
 |--------------------------------------------------------------------------
@@ -26,3 +27,6 @@ Route::get('/home', 'HomeController@index')->name('home');
 Route::get('/profile', 'ProfileController@index')->name('profile');
 Route::put('/profile', 'ProfileController@update')->name('profile.update');
 Route::get('/chart', 'ChartJSController@indeks')->name('chart','chart2');
+
+Route::get('/file-import',[ImportController::class,'importView'])->name('import-view');
+Route::post('/import',[ImportController::class,'import'])->name('import');
