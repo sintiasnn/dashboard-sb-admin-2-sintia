@@ -7267,3 +7267,16 @@
 #55 E:\\dashboard-sb-admin-2-sintia\\server.php(21): require_once('E:\\\\dashboard-sb...')
 #56 {main}
 "} 
+[2022-11-16 08:35:40] local.ERROR: Call to undefined method Illuminate\Foundation\Application::share() {"exception":"[object] (Error(code: 0): Call to undefined method Illuminate\\Foundation\\Application::share() at E:\\dashboard-sb-admin-2-sintia\\vendor\\maatwebsite\\excel\\src\\Maatwebsite\\Excel\\ExcelServiceProvider.php:154)
+[stacktrace]
+#0 E:\\dashboard-sb-admin-2-sintia\\vendor\\maatwebsite\\excel\\src\\Maatwebsite\\Excel\\ExcelServiceProvider.php(58): Maatwebsite\\Excel\\ExcelServiceProvider->bindClasses()
+#1 E:\\dashboard-sb-admin-2-sintia\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\Application.php(686): Maatwebsite\\Excel\\ExcelServiceProvider->register()
+#2 E:\\dashboard-sb-admin-2-sintia\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\ProviderRepository.php(75): Illuminate\\Foundation\\Application->register(Object(Maatwebsite\\Excel\\ExcelServiceProvider))
+#3 E:\\dashboard-sb-admin-2-sintia\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\Application.php(663): Illuminate\\Foundation\\ProviderRepository->load(Array)
+#4 E:\\dashboard-sb-admin-2-sintia\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\Bootstrap\\RegisterProviders.php(17): Illuminate\\Foundation\\Application->registerConfiguredProviders()
+#5 E:\\dashboard-sb-admin-2-sintia\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\Application.php(239): Illuminate\\Foundation\\Bootstrap\\RegisterProviders->bootstrap(Object(Illuminate\\Foundation\\Application))
+#6 E:\\dashboard-sb-admin-2-sintia\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\Console\\Kernel.php(310): Illuminate\\Foundation\\Application->bootstrapWith(Array)
+#7 E:\\dashboard-sb-admin-2-sintia\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\Console\\Kernel.php(127): Illuminate\\Foundation\\Console\\Kernel->bootstrap()
+#8 E:\\dashboard-sb-admin-2-sintia\\artisan(37): Illuminate\\Foundation\\Console\\Kernel->handle(Object(Symfony\\Component\\Console\\Input\\ArgvInput), Object(Symfony\\Component\\Console\\Output\\ConsoleOutput))
+#9 {main}
+"} 

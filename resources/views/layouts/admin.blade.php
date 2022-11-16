@@ -27,7 +27,7 @@
 <!-- Page Wrapper -->
 <div id="wrapper">
     <!-- Sidebar -->
-    <ul class="navbar-nav bg-gradient-primary sidebar sidebar-dark accordion" id="accordionSidebar">
+    <ul class="navbar-nav bg-gradient-secondary sidebar sidebar-dark accordion" id="accordionSidebar">
 
         <!-- Sidebar - Brand -->
         <a class="sidebar-brand d-flex align-items-center justify-content-center" href="{{ route('home') }}">
@@ -54,7 +54,12 @@
                 <span>{{ __('Grafik') }}</span></a>
         </li>
 
-        <!-- Grafik -->
+        <!-- Nav Item - Grafik -->
+        <li class="nav-item {{ Nav::isRoute('import') }}">
+            <a class="nav-link" href="{{ route('import') }}">
+                <i class="fas fa-file-import"></i>
+                <span>{{ __('Import') }}</span></a>
+        </li>
 
 
         <!-- Divider -->

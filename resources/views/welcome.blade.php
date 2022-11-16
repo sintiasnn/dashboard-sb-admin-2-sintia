@@ -13,9 +13,7 @@
         <style>
             html, body {
                 background-color: #fff;
-                /* background-image: url('{{ asset('img/bg_tanahlot.jpg') }}'); */
                 font-color: #262626;
-                /* opacity: 0; */
                 font-family: 'Nunito', sans-serif;
                 font-weight: 400;
                 height: 100vh;
@@ -85,7 +83,7 @@
 
             <div class="content">
                 <div class="title m-b-md">
-                    Dashboard Indeks Kepuasan Layanan Internet
+                    dashboard monitoring indeks kepuasan penyelenggaraan sistem informasi
                 </div>
             </div>
         </div>
